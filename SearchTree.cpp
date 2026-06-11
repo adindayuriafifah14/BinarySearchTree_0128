@@ -28,4 +28,14 @@ public:
         ROOT = NULL; // Initializing ROOT to null
     }
 
+    // Insert a node in the binary seacrh tree
+    void insert(string element)
+    {
+        Node *newNode = new Node(element, NULL, NULL);
+
+        newNode->info = element;
+        newNode->leftchild = NULL;
+        newNode->rightchild = NULL;
+    }
+
 }
